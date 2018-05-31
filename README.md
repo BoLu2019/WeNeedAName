@@ -1,1 +1,2 @@
-# WeNeedAName_Lu-B_Tsui-S-Vale-M
+# WeNeedAName (Bo Hui Lu, Maxwell Vale, Simon Tsui)
+RUBIX CUBEEEEE
