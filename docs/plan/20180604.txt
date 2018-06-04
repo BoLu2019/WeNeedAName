@@ -1,0 +1,31 @@
+Which jobs are most crucial?
+-Optimal implementation of moves on the cube faces
+-Having the cube respond and provide visual feedback to the user
+
+
+
+Which components constitute core functionality (vs non-essential)?
+-Reading 3D array of data into a presentable display of cube (essential)
+-Rotating the cube and choosing which face to be the modified (essential)
+-Have a self solving method(non)
+-Have a cube that the user can "color" according to whatever their real-life cube's arrangement may be(essential)
+-Scrambling the cube to be resolved by the user(essential)
+
+
+Which components are prerequisites for others?
+-Being able to display a cube in one form or another
+-Being able to do moves to alter the cube's appearance
+
+Which tasks can be delegated, and which must be collaboratively tackled?
+-Delegated:
+-coding movement of cube(i.e. rotating)
+-display of cube
+-cube color selection(and limitations of where certain colors can be placed)
+-scrambling of cube
+
+-Collaboratively tackled:
+-devlogs
+-plans
+-proposal updates/solidifing
+-readme
+-solving algorithm
