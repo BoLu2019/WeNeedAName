@@ -34,6 +34,7 @@ Simply run Cube.pde in Processing!
 ### *Tentative Add-Ons*
 
 <br>
+
 * A way to change the orientation of the cube with respect to the mouse. As of now, the red face is always the "front", green is always "left", etc. We want to add X, Y, and Z turns to be able to change how the cube is held, so to speak.
 
 * A Scramble Method + Timer
