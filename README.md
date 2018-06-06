@@ -10,8 +10,6 @@ When the user runs the program, the Rubik's cube will appear on the screen in 3D
 1. View the cube from a different angle by moving the mouse around the screen to rotate the whole cube.
 2. Rotate one of the cube's faces by calling one of the moves (Left, Right, Up, Down, Front, Back, and their inverses)
 
-<br>
-
 ### *How the Project Works*
 
 </br>
