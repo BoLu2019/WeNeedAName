@@ -2,8 +2,6 @@
 
 ## Rubik's Cube Visualizer
 
-</br>
-
 ### *Project Presentation to the User*
 
 When the user runs the program, the Rubik's cube will appear on the screen in 3D view. The user can do several actions onto the cube.
