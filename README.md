@@ -10,6 +10,7 @@ When the user runs the program, the Rubik's cube will appear on the screen in 3D
 1. View the cube from a different angle by moving the mouse around the screen to rotate the whole cube.
 2. Rotate one of the cube's faces by calling one of the moves (Left, Right, Up, Down, Front, Back, and their inverses)
 
+
 ### *How the Project Works*
 
 </br>
@@ -29,3 +30,13 @@ The current state of the cube is maintained by a 3D array of dimensions 3x3x6 (w
 </br>
 Simply run Cube.pde in Processing!
 
+
+### *Tentative Add-Ons*
+
+<br>
+* A way to change the orientation of the cube with respect to the mouse. As of now, the red face is always the "front", green is always "left", etc. We want to add X, Y, and Z turns to be able to change how the cube is held, so to speak.
+* A Scramble Method + Timer
+  * We want the user to be able to solve a scrambled cube and solve it while having a timer on the side. Right now, the cube starts in a solved position and is left up to the user to turn.
+* User input for state of the cube
+  * Give user the choice to input the colors of each side of the cube
+  * Possibly also input a solve method that will solve a cube in a scrambled state
