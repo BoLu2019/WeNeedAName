@@ -1,4 +1,4 @@
-# WeNeedAName (Bo Hui Lu, Maxwell Vale, Simon Tsui)
+# WeNeedAName :sweat_smile: (Bo Hui Lu, Maxwell Vale, Simon Tsui)
 
 ## Rubik's Cube Visualizer
 
