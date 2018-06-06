@@ -25,6 +25,15 @@ In order to rotate the cube about its center, the cube is rotated with respect t
 The current state of the cube is maintained by a 3D array of dimensions 3x3x6 (width x length x face). Each face of the cube represents a 2D array (width x length) and the side of the cube is determined by the face (0-5). In the array, each position is given an integer from 0 to 5 (inclusive), which is used to determine the color of that square. So, when drawing the cube, the color of each rectangle corresponds to the its respective value in the array (0 = red, 1 = orange, 2 = green, 3 = blue, 4 = white, 5 = yellow). When turning a side of the cube, color values are swapped between faces, which simulates a turn of a certain side of the cube. 
 
 
+### Versions
+
+<br>
+_v1 --> Cube1x1.pde_
+In this preliminary version, we solidified the essentials and core functionality of the entire project. First, we learned how to utilize 3D in Processing, starting with the box() method. We then worked out how our cube would move around. So, we made the cube follow the mouse as it moves across the Processing window. Finally, we figured out how to color each side. At first, we were thinking of drawing individual boxes for each piece of the cube, but then we figured it would be much easier to just paint a 2D rect onto each face by translation and rotation. So, we figured out how to get a square on each side and made sure that it remained on the cube as the cube rotated.
+
+_v2 --> Cube3x3.pde_
+In this main version, we are implementing everything that is necessary to be able to call this a "Rubik's Cube Visualizer". So, we're pretty much adding all of the functionality of a 3x3 Rubik's Cube here. First, we used the same method of coloring the sides, but we did nine squares per side to mimic the 3x3 look (instead of a 1x1). Then, we went about creating a means of storing the current color of each square on the cube (54 to be exact). We ended up using a 3D Array to store all of the values. Then, we worked on probably the most defining aspect: turning the sides of the cube. Instead of the sides physically turning, we just swapped colors or specific rectangles in the array to mimic a turn of a side.
+
 ### *Launch Instructions*
 
 </br>
