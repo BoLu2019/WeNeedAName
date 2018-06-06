@@ -40,7 +40,7 @@ In this main version, we are implementing everything that is necessary to be abl
 ### *Launch Instructions*
 
 </br>
-Simply run Cube.pde in Processing!
+Simply run the the latest version in Processing --> v2/Cube3x3.pde
 
 
 ### *Tentative Add-Ons*
