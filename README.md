@@ -35,8 +35,13 @@ Simply run Cube.pde in Processing!
 
 <br>
 * A way to change the orientation of the cube with respect to the mouse. As of now, the red face is always the "front", green is always "left", etc. We want to add X, Y, and Z turns to be able to change how the cube is held, so to speak.
+
 * A Scramble Method + Timer
+
   * We want the user to be able to solve a scrambled cube and solve it while having a timer on the side. Right now, the cube starts in a solved position and is left up to the user to turn.
+  
 * User input for state of the cube
+
   * Give user the choice to input the colors of each side of the cube
+  
   * Possibly also input a solve method that will solve a cube in a scrambled state
