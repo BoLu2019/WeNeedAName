@@ -24,12 +24,19 @@ The current state of the cube is maintained by a 3D array of dimensions 3x3x6 (w
 **Key Presses**
 
 r - cw turn of right face
+
 l - cw turn of left face
+
 u - cw turn of top face
+
 d - cw turn of down face
+
 f - cw turn of front face
+
 b - cw turn of back face
+
 _SHIFT + key turns that face ccw_
+
 
 s - scramble the cube
 
