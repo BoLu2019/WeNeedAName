@@ -2,7 +2,7 @@
 
 // color signatures for the six colors used
 color red = color(255, 0, 0);
-color orange = color(255, 150, 0);
+color orange = color(255, 110, 0);
 color white = color(255);
 color yellow = color(255, 255, 0);
 color blue = color(0, 0, 255);
@@ -15,7 +15,7 @@ static final int GREEN = 2;
 static final int BLUE = 3;
 static final int WHITE = 4;
 static final int YELLOW = 5;
-int curr = ORANGE;
+int curr = RED;
 
 /* 
  COLOR CODE: 
@@ -583,26 +583,26 @@ void turnD() {
         temps[x] = squares[x][2][0];
         squares[x][2][0] = squares[x][2][2];
         //side effect(yellow)
-        squares[2][0][5] = squares[2][2][5];
-        squares[1][0][5] = squares[2][1][5];
+        squares[2][0][5] = squares[0][0][5];
+        squares[1][0][5] = squares[0][1][5];
       }
       if (i==1) {
         squares[x][2][2] = squares[2-x][2][1];
         //side effect
-        squares[2][2][5] = squares[0][2][5];
-        squares[2][1][5] = squares[1][2][5];
+        squares[0][0][5] = squares[0][2][5];
+        squares[0][1][5] = squares[1][2][5];
       }
       if (i==2) {
         squares[x][2][1] = squares[x][2][3];
         //side effect
-        squares[0][2][5] = squares[0][0][5];
-        squares[1][2][5] = squares[0][1][5];
+        squares[0][2][5] = squares[2][2][5];
+        squares[1][2][5] = squares[2][1][5];
       }
       if (i==3) {
         squares[x][2][3] = temps[2-x];
         //side effect
-        squares[0][0][5] = tempCorner;
-        squares[0][1][5] = tempEdge;
+        squares[2][2][5] = tempCorner;
+        squares[2][1][5] = tempEdge;
       }
     }
   }
@@ -617,26 +617,26 @@ void turnDp() {
         temps[x] = squares[x][2][0];
         squares[x][2][0] = squares[2-x][2][3];
         //side effect(yellow)
-        squares[2][0][5] = squares[0][0][5];
-        squares[1][0][5] = squares[0][1][5];
+        squares[2][0][5] = squares[2][2][5];
+        squares[1][0][5] = squares[2][1][5];
       }
       if (i==1) {
         squares[x][2][3] = squares[x][2][1];
         //side effect
-        squares[0][0][5] = squares[0][2][5];
-        squares[0][1][5] = squares[1][2][5];
+        squares[2][2][5] = squares[0][2][5];
+        squares[2][1][5] = squares[1][2][5];
       }
       if (i==2) {
         squares[x][2][1] = squares[2-x][2][2];
         //side effect
-        squares[0][2][5] = squares[2][2][5];
-        squares[1][2][5] = squares[2][1][5];
+        squares[0][2][5] = squares[0][0][5];
+        squares[1][2][5] = squares[0][1][5];
       }
       if (i==3) {
         squares[x][2][2] = temps[x];
         //side effect
-        squares[2][2][5] = tempCorner;
-        squares[2][1][5] = tempEdge;
+        squares[0][0][5] = tempCorner;
+        squares[0][1][5] = tempEdge;
       }
     }
   }
