@@ -64,8 +64,8 @@ In the third version, we have succesfully implemented every basic move on a Rubi
 2. Click the run button in the top right of the window to run the script. A new screen should appear with the Rubik's Cube on it!
 3. Look around the cube by moving your mouse around that new screen.
 4. You can now play around with the cube!
-  1. You can turn each side of the cube by pressing specific buttons on the keyboard (refer to **Key Presses** above)
-  2. You may also press the s key to scramble the cube if you wish to have a random cube combination to solve.
+    1. You can turn each side of the cube by pressing specific buttons on the keyboard (refer to **Key Presses** above)
+    2. You may also press the s key to scramble the cube if you wish to have a random cube combination to solve.
 
 
 <br>
