@@ -60,10 +60,12 @@ In the third version, we have succesfully implemented every basic move on a Rubi
 
 ### *Launch Instructions*
 
-1. Open the latest version in Processing --> v3/Cube3x3.pde
-2. Click the run button in the top right of the window to run the script. A new screen should appear with the Rubik's Cube on it!
-3. Look around the cube by moving your mouse around that new screen.
-4. You can now play around with the cube!
+1. Clone this repo --> '$ git clone git@github.com:BoLu2019/WeNeedAName.git'
+2. Move into the latest version --> '$ cd WeNeedAName/v3/Cube3x3'
+3. Open Cube3x3.pde in processing or run '$ processing Cube3x3.pde'
+4. Click the run button in the top right of the window to run the script. A new screen should appear with the Rubik's Cube on it!
+5. Look around the cube by moving your mouse around that new screen.
+6. You can now play around with the cube!
     1. You can turn each side of the cube by pressing specific buttons on the keyboard (refer to **Key Presses** above)
     2. You may also press the s key to scramble the cube if you wish to have a random cube combination to solve.
 
