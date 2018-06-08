@@ -213,6 +213,22 @@ void keyPressed() {
   if (key == 'c') {
     println("Solved? " + isSolved());
   }
+
+  if (key == '!') {
+    superFlip();
+  }
+  if (key == '@') {
+    checkerBoard();
+  }
+  if (key == '#') {
+    cubeInCube();
+  }
+  if (key == '$') {
+    cubeInCubeInCube();
+  }
+  if (key == '%') {
+    sixDots();
+  }
 }
 
 /* METHODS FOR EACH TURN*/
