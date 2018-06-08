@@ -34,9 +34,18 @@ int numColors = 6;
 // Initially, the each face is given the same number, signifying that the cube is in a solved state
 int[][][] squares = new int[w][h][numColors];
 
+PFont digital;
+
+int startTime = 0;
+int endTime = 0;
+boolean runningTime = false;
+
+int seconds = 0;
+int minutes = 0;
+int hours = 0;
+
 void setup() {
   size (750, 750, P3D); //to fit the 1024*768 requirements
-  background(0);
 
   // initial state of the colors --> a solved cube
   for (int wid = 0; wid < w; wid++) {
@@ -46,10 +55,18 @@ void setup() {
       }
     }
   }
+
+  digital = createFont("DS-DIGI.TTF", 100);
 }
 
 void draw() {
   background(150);
+  
+  timer();
+  if(isSolved()) {
+    stopTimer();
+  }
+  
   fill(0);
   stroke(white);
   strokeWeight(5);
@@ -154,7 +171,6 @@ color getColor(int colorNum) {
 }
 
 // User input for turning sides and rotating the cube to a new face
-// the moves are from the perspective of the red face, however the moves can be reused. For example, the right move for face green is the same thing as front move for red.
 void keyPressed() {
   if (key == 'r') {
     turnR();
@@ -220,6 +236,9 @@ void keyPressed() {
 
 
 void scramble() {
+
+  startTimer();
+
   for (int i = 0; i < 25; i++) {
     int chance = (int)(Math.random() * 12);
     if (chance == 0) {
@@ -273,14 +292,15 @@ void reset() {
 }
 
 boolean isSolved() {
+  boolean solved = true;
   for (int a = 0; a < 3; a++) {
     for (int b = 0; b < 3; b++) {
       for (int c = 0; c < 6; c++) {
-        if (squares[a][b][c] != c) {
-          return false;
+        if (squares[a][b][c] != squares[1][1][c]) {
+          solved = false;
         }
       }
     }
   }
-  return true;
+  return solved;
 }
