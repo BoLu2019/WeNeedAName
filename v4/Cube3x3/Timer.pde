@@ -1,3 +1,5 @@
+boolean added = false;
+
 void timer() {
   textAlign(CENTER);
   textFont(digital);
@@ -9,6 +11,7 @@ void timer() {
 void startTimer() {
   startTime = millis();
   runningTime = true;
+  added = false;
 }
 
 void stopTimer() {
@@ -16,6 +19,10 @@ void stopTimer() {
     endTime = millis();
   }
   runningTime = false;
+  if (!added) {
+    addTime(elapsed() / 1000);
+    added = true;
+  }
 }
 
 int elapsed() {

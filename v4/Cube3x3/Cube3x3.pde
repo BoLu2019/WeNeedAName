@@ -65,6 +65,7 @@ void draw() {
   timer();
   if (isSolved()) {
     stopTimer();
+    scoreboard();
   }
 
   fill(0);
