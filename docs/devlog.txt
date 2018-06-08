@@ -1,55 +1,33 @@
-<Team Name (without word "team")>
-<Member Bubbles>
-<Member Buttercup>
-<Member Blossom>
-pd <pd#>
----------------------
-<Project>
-
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-USAGE:
-* Replace all fields, angle brackets included, with specified info.
-  eg, pd <pd#> --> pd 3
-* Delete these instructions once all teammates understand usage.
-  (from tilde bar above to tilde bar below)
-
-devlog--
-Use keyboard shortcut to jump to end,
- replicate entry template,
- modify appropriately.
-
-zone of reflection--
-Flesh out each category whenever necessary, appropriate.
- Need not be fully filled in until end of project,
- but best done as you go along.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+WeNeedAName
+Bo Hui Lu
+Simon Tsui
+Maxwell Vale
+pd 02
+-----------------------
+Rubik's Cube Visualizer
 
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<Wow, we so BOSS bc...>
+-Able to get a 3D display of the cube that could be rotated to view from different angles
+-Switching orientation and face to make solving the cube more user friendly
+
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
->
+-Unfortunately, we were unable to make an auto-solver of the rubik's cube.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<wow! oo! etc!...>
+-The order of how you set array values impacts the outcome.
+-the rotateX and rotateY methods moved the whole screen
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We changed ___ to ___ bc...
-<etc>
-<etc>
+-Originally, we had one class with everything in the driver.
+-We ended up expanding our project to 4 classes
+-Switched up the orientation from being based on the "red" face to being user chosen
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,9 +48,38 @@ LESSONS LEARNED
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
-yyyy-mm-dd
+2018-05-29
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Bo Hui, Simon, Maxwell: created project proposal
+
+2018-05-30
+--------------------------------------------------------------
+Maxwell: Updated Plan for 2018-05-31
+
+2018-05-31
+--------------------------------------------------------------
+Simon: Created uml diagram
+Maxwell: Created flow chart
+
+2018-06-03
+--------------------------------------------------------------
+Bo Hui: Updated Plan for 2018-06-04
+Maxwell: Created 3D display of the rubik's cube
+
+2018-06-05
+--------------------------------------------------------------
+Bo Hui: Updated Plan for 2018-06-06
+Simon: Updated devlog
+
+2018-06-06
+--------------------------------------------------------------
+Bo Hui, Maxwell, Simon: Added 8 of 14 turns to the code.
+Simon: Added methods for scramble and 6 turns
+
+2018-06-07
+--------------------------------------------------------------
+Maxwell: Modified turn methods, added face orientation
+Bo Hui: Added timer.pde class and cube designs to solve
+Simon: Added reset and isSolved methods
+
 ==============================================================
