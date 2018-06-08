@@ -72,7 +72,7 @@ void draw() {
   rotateY(-mouseX * 2 * PI/height);
   box(size);
 
-  // color filling
+  
 
   // traversing through array Squares
   for (int wid = 0; wid < w; wid++) {
@@ -140,7 +140,7 @@ void draw() {
       }
     }
   }
-}
+} // end draw
 
 // Returns the color depending on the number from 0-5 inclusive
 color getColor(int colorNum) {
@@ -331,6 +331,9 @@ void keyPressed() {
     else{
       turnBp();
     }
+  }
+  if (key == 'x') {
+    turnX();
   }
   if (key == 's') { //mixes the cube up
     scramble();
@@ -783,6 +786,10 @@ void turnBp() {
       }
     }
   }
+}
+
+void turnX() {
+  
 }
 
 void scramble() {

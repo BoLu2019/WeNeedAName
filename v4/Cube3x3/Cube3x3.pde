@@ -1,5 +1,3 @@
-//There's 830 lines of code in this file
-
 // color signatures for the six colors used
 color red = color(255, 0, 0);
 color orange = color(255, 110, 0);
@@ -7,15 +5,6 @@ color white = color(255);
 color yellow = color(255, 255, 0);
 color blue = color(0, 0, 255);
 color green = color(0, 255, 0);
-
-//Face Status, forgot to use the final variables though
-static final int RED = 0;
-static final int ORANGE = 1;
-static final int GREEN = 2;
-static final int BLUE = 3;
-static final int WHITE = 4;
-static final int YELLOW = 5;
-int curr = RED;
 
 /* 
  COLOR CODE: 
@@ -169,168 +158,52 @@ color getColor(int colorNum) {
 // the moves are from the perspective of the red face, however the moves can be reused. For example, the right move for face green is the same thing as front move for red.
 void keyPressed() {
   if (key == 'r') {
-    if (curr == 1 || curr == 4) {
-      turnL();
-    }
-    if (curr == 2) {
-      turnF();
-    }
-    if (curr == 3) {
-      turnB();
-    }
-    if (curr == 5 || curr == 0) {
-      turnR();
-    }
+    turnR();
   }
   if (key == 'R') {
-    if (curr == 1 || curr ==  4) {
-      turnLp();
-    }
-    if (curr == 2) {
-      turnFp();
-    }
-    if (curr == 3) {
-      turnBp();
-    }
-    if (curr == 5 || curr == 0) {
-      turnRp();
-    }
+    turnRp();
   }
   if (key == 'l') {
-    if (curr == 1 || curr == 4) {
-      turnR();
-    }
-    if (curr == 2) {
-      turnB();
-    }
-    if (curr==3) {
-      turnF();
-    }
-    if (curr == 5 || curr == 0) {
-      turnL();
-    }
+    turnL();
   }
   if (key == 'L') {
-    if (curr == 1 || curr == 4) {
-      turnRp();
-    }
-    if (curr == 2) {
-      turnBp();
-    }
-    if (curr == 3) {
-      turnFp();
-    }
-    if (curr == 5 || curr == 0) {
-      turnLp();
-    }
+    turnLp();
   }
   if (key == 'u') {
-    if (curr==4 || curr == 5) {
-      turnF();
-    } else {
-      turnU();
-    }
+    turnU();
   }
   if (key == 'U') {
-    if (curr == 4 || curr == 5) {
-      turnFp();
-    } else {
-      turnUp();
-    }
+    turnUp();
   }
   if (key == 'd') {
-    if (curr == 4 || curr == 5) {
-      turnB();
-    } else {
-      turnD();
-    }
+    turnD();
   }
   if (key == 'D') {
-    if (curr == 4 || curr == 5) {
-      turnBp();
-    } else {
-      turnDp();
-    }
+    turnDp();
   }
   if (key == 'f') {
-    if(curr == 1){
-      turnB();
-    }
-    if(curr == 2){
-      turnL();
-    }
-    if(curr == 3){
-      turnR();
-    }
-    if(curr == 4){
-      turnU();
-    }
-    if(curr == 5){
-      turnD();
-    }
-    else{
-      turnF();
-    }
+    turnF();
   }
   if (key == 'F') {
-    if(curr == 1){
-      turnBp();
-    }
-    if(curr == 2){
-      turnLp();
-    }
-    if(curr == 3){
-      turnRp();
-    }
-    if(curr == 4){
-      turnUp();
-    }
-    if(curr == 5){
-      turnDp();
-    }
-    else{
-      turnFp();
-    }
+    turnFp();
   }
   if (key == 'b') {
-    if(curr == 1){
-      turnF();
-    }
-    if(curr == 2){
-      turnR();
-    }
-    if(curr == 3){
-      turnL();
-    }
-    if(curr == 4){
-      turnD();
-    }
-    if(curr == 5){
-      turnU();
-    }
-    else{
-      turnB();
-    }
+    turnB();
   }
   if (key == 'B') {
-    if(curr == 1){
-      turnFp();
-    }
-    if(curr == 2){
-      turnRp();
-    }
-    if(curr == 3){
-      turnLp();
-    }
-    if(curr == 4){
-      turnDp();
-    }
-    if(curr == 5){
-      turnUp();
-    }
-    else{
-      turnBp();
-    }
+    turnBp();
+  }
+  if (key == 'x') {
+    turnX();
+  }
+  if (key == 'X') {
+    turnXp();
+  }
+  if (key == 'y') {
+    turnY();
+  }
+  if (key == 'Y') {
+    turnYp();
   }
   if (key == 's') { //mixes the cube up
     scramble();
