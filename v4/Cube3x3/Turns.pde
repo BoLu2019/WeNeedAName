@@ -117,9 +117,6 @@ void turnL() {
         squares[2][1][2] = tempEdge;
       }
     }
-
-    // Rotating the left face as a side effect
-    // Edges
   }
 }
 
@@ -472,31 +469,33 @@ void turnY() {
 }
 
 void turnYp() {
-    int [] temps = new int[3];
+
+  int[] temps = new int[3];
 
   for (int i = 0; i < 4; i++) {
     for (int x = 0; x < 3; x++) {
-      if (i == 0) {
+      if (i==0) {
         temps[x] = squares[x][1][0];
-        squares[x][1][0] = squares[2-x][1][2];
+        squares[x][1][0] = squares[x][1][2];
       }
       if (i==1) {
-        squares[x][1][2] = squares[x][1][1];
+        squares[x][1][2] = squares[2-x][1][1];
       }
       if (i==2) {
-        squares[x][1][1] = squares[2-x][1][3];
+        squares[x][1][1] = squares[x][1][3];
       }
       if (i==3) {
-        squares[x][1][3] = temps[x];
+        squares[x][1][3] = temps[2-x];
       }
     }
   }
+
   turnUp();
   turnD();
 }
 
 void turnX() {
-  
+
   int[] temps = new int[3];
 
   for (int i = 0; i < 4; i++) {
@@ -522,7 +521,7 @@ void turnX() {
 }
 
 void turnXp() {
-    
+
   int[] temps = new int[3];
 
   for (int i = 0; i < 4; i++) {
@@ -530,16 +529,16 @@ void turnXp() {
 
       if (i == 0) {
         temps[x] = squares[1][x][0];
-        squares[1][x][0] = squares[1][x][4];
+        squares[1][x][0] = squares[1][2-x][4];
       }
       if (i == 1) {
-        squares[1][x][4] = squares[1][2-x][1];
+        squares[1][x][4] = squares[1][x][1];
       }
       if (i == 2) {
-        squares[1][x][1] = squares[1][x][5];
+        squares[1][x][1] = squares[1][2-x][5];
       }
       if (i == 3) {
-        squares[1][x][5] = temps[2-x];
+        squares[1][x][5] = temps[x];
       }
     }
   }
