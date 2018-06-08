@@ -61,12 +61,12 @@ void setup() {
 
 void draw() {
   background(150);
-  
+
   timer();
-  if(isSolved()) {
+  if (isSolved()) {
     stopTimer();
   }
-  
+
   fill(0);
   stroke(white);
   strokeWeight(5);
@@ -228,6 +228,21 @@ void keyPressed() {
   }
   if (key == 'c') {
     println("Solved? " + isSolved());
+  }
+  if (key == '!') {
+    superFlip();
+  }
+  if (key == '@') {
+    checkerBoard();
+  }
+  if (key == '#') {
+    cubeInCube();
+  }
+  if (key == '$') {
+    cubeInCubeInCube();
+  }
+  if (key == '%') {
+    sixDots();
   }
 }
 
