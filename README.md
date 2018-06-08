@@ -74,12 +74,12 @@ In the third version, we have succesfully implemented every basic move on a Rubi
 
 ### *Tentative Add-Ons*
 
-- [ ] A way to change the orientation of the cube with respect to the mouse. As of now, the red face is always the "front", green is always "left", etc. We want to add X, Y, and Z turns to be able to change how the cube is held, so to speak.
+- [x] A way to change the orientation of the cube with respect to the mouse. As of now, the red face is always the "front", green is always "left", etc. We want to add X, Y, and Z turns to be able to change how the cube is held, so to speak.
 
 - [x] A Scramble Method
 
-- [ ] A Timer
+- [x] A Timer
   
 - [ ] User input for state of the cube
 
-- [ ] Auto Solver
+- [ ] ~~Auto Solver~~ (Doesn't seem plausible given time)
