@@ -25,30 +25,30 @@ The current state of the cube is maintained by a 3D array of dimensions 3x3x6 (w
 
 *Rotations*
 
-r - cw turn of right face
-l - cw turn of left face
-u - cw turn of top face
-d - cw turn of down face
-f - cw turn of front face
-b - cw turn of back face
-x - cw turn of entire cube about x-axis 
-y - cw turn of entire cube about y-axis
+r - cw turn of right face <br>
+l - cw turn of left face <br>
+u - cw turn of top face <br>
+d - cw turn of down face <br>
+f - cw turn of front face <br>
+b - cw turn of back face <br>
+x - cw turn of entire cube about x-axis  <br>
+y - cw turn of entire cube about y-axis <br>
 
-_SHIFT + key turns that face ccw_
+(_SHIFT + key turns that face ccw_)
 
 *Patterns*
 
-! - Superflip
-@ - Checkerboard
-#' - Cube in Cube
-$ - Cube in Cube in Cube
-% - Six Dots
+! - Superflip <br>
+@ - Checkerboard <br>
+#' - Cube in Cube <br>
+$ - Cube in Cube in Cube <br>
+% - Six Dots <br>
 
 *Other*
 
-s - scramble the cube
-c - prints true in console if cube is in solved state, false otherwise
-SPACE - resets the cube
+s - scramble the cube <br>
+c - prints true in console if cube is in solved state, false otherwise <br>
+SPACE - resets the cube <br>
 
 <br>
 
