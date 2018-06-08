@@ -208,6 +208,12 @@ void keyPressed() {
   if (key == 's') { //mixes the cube up
     scramble();
   }
+  if (key == ' ') {
+    reset();
+  }
+  if (key == 'c') {
+    print(isSolved());
+  }
 }
 
 /* METHODS FOR EACH TURN*/
@@ -254,4 +260,28 @@ void scramble() {
       turnBp();
     }
   }
+}
+
+//"solves" the cube
+void reset() {
+  for (int a = 0; a < 3; a++) {
+    for (int b = 0; b < 3; b++) {
+      for (int c = 0; c < 6; c++) {
+        squares[a][b][c] = c;
+      }
+    }
+  }
+}
+
+boolean isSolved() {
+  for (int a = 0; a < 3; a++) {
+    for (int b = 0; b < 3; b++) {
+      for (int c = 0; c < 6; c++) {
+        if (squares[a][b][c] != c) {
+          return false;
+        }
+      }
+    }
+  }
+  return true;
 }
