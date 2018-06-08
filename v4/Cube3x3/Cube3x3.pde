@@ -65,7 +65,6 @@ void draw() {
   timer();
   if (isSolved()) {
     stopTimer();
-    scoreboard();
   }
 
   fill(0);
@@ -208,6 +207,12 @@ void keyPressed() {
   }
   if (key == 'B') {
     turnBp();
+  }
+  if (key == 'm') {
+    turnM();
+  }
+  if (key == 'M') {
+    turnMp();
   }
   if (key == 'x') {
     turnX();

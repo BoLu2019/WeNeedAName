@@ -2,10 +2,19 @@ ArrayList<Integer> scores = new ArrayList<Integer>();
 
 void addTime (int time) {
   scores.add(time);
-  sort(scores);
   added = true;
 }
 
 void scoreboard() {
-  println(scores);
+  printTimes(sort(scores));
+}
+
+void printTimes(ArrayList<Integer> arr) {
+  for (int time:arr) {
+    println("Best scores: ");
+    print(time/(1000*60*60) % 24 + ":" + (time/(1000*60) % 60)/10 + (time/(1000*60) % 60)%10 + ":" + (time/1000 % 60)/10 + (time/1000 % 60)%10);
+    print(", ");
+  }
+  print("\n");
+  //println(sort(scores));
 }

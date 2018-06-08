@@ -5,7 +5,7 @@ void timer() {
   textFont(digital);
   fill(255);
   textSize(75);
-  text(hours() +":"+ minutes() +":"+ seconds(), width/2, 75);
+  text(hours() +":"+ minutes()/10 + minutes() % 10 +":"+ seconds()/10 + seconds() % 10, width/2, 75);
 }
 
 void startTimer() {
@@ -20,8 +20,9 @@ void stopTimer() {
   }
   runningTime = false;
   if (!added) {
-    addTime(elapsed() / 1000);
+    addTime(elapsed());
     added = true;
+    scoreboard();
   }
 }
 

@@ -444,6 +444,52 @@ void turnBp() {
   }
 }
 
+void turnM() {
+  int[] temps = new int[3];
+
+  for (int i = 0; i < 4; i++) {
+    for (int x = 0; x < 3; x++) {
+
+      if (i == 0) {
+        temps[x] = squares[1][x][0];
+        squares[1][x][0] = squares[1][x][5];
+      }
+      if (i == 1) {
+        squares[1][x][5] = squares[1][2-x][1];
+      }
+      if (i == 2) {
+        squares[1][x][1] = squares[1][x][4];
+      }
+      if (i == 3) {
+        squares[1][x][4] = temps[2-x];
+      }
+    }
+  }
+}
+
+void turnMp() {
+  int[] temps = new int[3];
+
+  for (int i = 0; i < 4; i++) {
+    for (int x = 0; x < 3; x++) {
+
+      if (i == 0) {
+        temps[x] = squares[1][x][0];
+        squares[1][x][0] = squares[1][2-x][4];
+      }
+      if (i == 1) {
+        squares[1][x][4] = squares[1][x][1];
+      }
+      if (i == 2) {
+        squares[1][x][1] = squares[1][2-x][5];
+      }
+      if (i == 3) {
+        squares[1][x][5] = temps[x];
+      }
+    }
+  }
+}
+
 void turnY() {
   int [] temps = new int[3];
 
@@ -495,53 +541,13 @@ void turnYp() {
 }
 
 void turnX() {
-
-  int[] temps = new int[3];
-
-  for (int i = 0; i < 4; i++) {
-    for (int x = 0; x < 3; x++) {
-
-      if (i == 0) {
-        temps[x] = squares[1][x][0];
-        squares[1][x][0] = squares[1][x][5];
-      }
-      if (i == 1) {
-        squares[1][x][5] = squares[1][2-x][1];
-      }
-      if (i == 2) {
-        squares[1][x][1] = squares[1][x][4];
-      }
-      if (i == 3) {
-        squares[1][x][4] = temps[2-x];
-      }
-    }
-  }
   turnR();
+  turnM();
   turnLp();
 }
 
 void turnXp() {
-
-  int[] temps = new int[3];
-
-  for (int i = 0; i < 4; i++) {
-    for (int x = 0; x < 3; x++) {
-
-      if (i == 0) {
-        temps[x] = squares[1][x][0];
-        squares[1][x][0] = squares[1][2-x][4];
-      }
-      if (i == 1) {
-        squares[1][x][4] = squares[1][x][1];
-      }
-      if (i == 2) {
-        squares[1][x][1] = squares[1][2-x][5];
-      }
-      if (i == 3) {
-        squares[1][x][5] = temps[x];
-      }
-    }
-  }
+  turnMp();
   turnRp();
   turnL();
 }
