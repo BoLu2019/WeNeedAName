@@ -1,6 +1,6 @@
 void timer() {
   textAlign(CENTER);
-  //textFont(digital);
+  textFont(digital);
   fill(255);
   textSize(75);
   text(hours() +":"+ minutes() +":"+ seconds(), width/2, 75);
