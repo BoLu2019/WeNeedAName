@@ -46,7 +46,6 @@ void setup() {
       }
     }
   }
-  print("Hi");
 }
 
 void draw() {
@@ -212,7 +211,7 @@ void keyPressed() {
     reset();
   }
   if (key == 'c') {
-    print(isSolved());
+    println("Solved? " + isSolved());
   }
 }
 
