@@ -226,7 +226,7 @@ void keyPressed() {
   if (key == 'Y') {
     turnYp();
   }
-  if (key == 's') { //mixes the cube up
+  if (keyCode == ENTER) { //mixes the cube up
     scramble();
   }
   if (key == ' ') {
